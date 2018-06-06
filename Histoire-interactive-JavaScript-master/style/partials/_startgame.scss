@@ -1,0 +1,52 @@
+.StartGameContainer .is-active{
+  display: none;
+}
+.StartGame {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: $black;
+  &_startText{
+    color: $yellow;
+    font-family: $mainFont;
+    font-size: 100px;
+    margin-top: 70px;
+    margin-left: 38%;  }
+  &_title{
+    color: $white;
+    font-size: 36px;
+    margin-top: 2%;
+    margin-left: 35%;
+  }
+  &_warsText{
+    color: $yellow;
+    font-family: $mainFont;
+    font-size: 100px;
+    margin-top: 2%;
+    margin-left: 36%;
+  }
+  &_button{
+    width: 340px;
+    height: 77px;
+    border: 3px solid $yellow;
+    margin-left: 36%;
+    margin-top: 5%;
+    cursor: pointer;
+    &_start{
+    color: $yellow;
+    font-family: $mainFont;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 19px;
+    }
+  }
+  &_button:hover{
+    border: 3px solid #fff;
+  }
+  &_button_start:hover{
+    color: #fff;
+  }
+}
+.is-active{
+  display: block;
+}

@@ -1,0 +1,36 @@
+@import "global/reset";
+@import "global/variables";
+@import "global/fonts";
+@import "forsize/responsive";
+@import "partials/startgame";
+@import "partials/galaxy";
+@import "partials/description";
+@import "partials/changeopinion";
+@import "partials/goodbye";
+@import "partials/profile";
+@import "partials/chat";
+
+body {
+  // font-family: 'Montserrat', sans-serif;
+  // font-size: 16px;
+}
+
+.mainContainer {
+  max-width: 1300px;
+  padding: 0 3em;
+  margin: 0 auto;
+  @include responsive(desktop) {
+    padding: 0 2em;
+    margin: 0 auto;
+  }
+  @include responsive(tablet) {
+    padding: 0 1em;
+  }
+  @include responsive(mobile) {
+    padding: 0 1em;
+  }
+}
+
+@include responsive(desktop) {}
+@include responsive(tablet) {}
+@include responsive(mobile) {}

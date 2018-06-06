@@ -1,0 +1,603 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Harriet Display';
+  src: url("../assets/fonts/Harriet-Display-Light.woff") format("woff");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: 'Harriet Display';
+  src: url("../assets/fonts/Harriet-Display-Regular.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Harriet Display';
+  src: url("../assets/fonts/HarrietDisplay-Medium.woff2") format("woff2"), url("../assets/fonts/HarrietDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Harriet Display';
+  src: url("../assets/fonts/HarrietDisplay-Bold.woff2") format("woff2"), url("../assets/fonts/HarrietDisplay-Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'Harriet Display';
+  src: url("../assets/fonts/HarrietDisplay-Black.woff2") format("woff2"), url("../assets/fonts/HarrietDisplay-Black.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Playfair';
+  src: url("./assets/fonts/PlayfairDisplay-Regular.otf") format("truetype");
+  font-weight: 300; }
+@font-face {
+  font-family: 'Playfair';
+  src: url("./assets/fonts/PlayfairDisplay-Bold.otf") format("truetype");
+  font-weight: 400; }
+@font-face {
+  font-family: 'Playfair';
+  src: url("./assets/fonts/PlayfairDisplay-Black.otf") format("truetype");
+  font-weight: 500; }
+.StartGameContainer .is-active {
+  display: none; }
+
+.StartGame {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000000; }
+  .StartGame_startText {
+    color: #FFE81F;
+    font-family: STARWARS;
+    font-size: 100px;
+    margin-top: 70px;
+    margin-left: 38%; }
+  .StartGame_title {
+    color: #FFFFFF;
+    font-size: 36px;
+    margin-top: 2%;
+    margin-left: 35%; }
+  .StartGame_warsText {
+    color: #FFE81F;
+    font-family: STARWARS;
+    font-size: 100px;
+    margin-top: 2%;
+    margin-left: 36%; }
+  .StartGame_button {
+    width: 340px;
+    height: 77px;
+    border: 3px solid #FFE81F;
+    margin-left: 36%;
+    margin-top: 5%;
+    cursor: pointer; }
+    .StartGame_button_start {
+      color: #FFE81F;
+      font-family: STARWARS;
+      font-size: 36px;
+      text-align: center;
+      margin-top: 19px; }
+  .StartGame_button:hover {
+    border: 3px solid #fff; }
+  .StartGame_button_start:hover {
+    color: #fff; }
+
+.is-active {
+  display: block; }
+
+.GalaxyContainer {
+  display: none; }
+
+.Galaxy {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  overflow: hidden; }
+  .Galaxy_textTime {
+    color: #FFE81F;
+    margin-left: 60%;
+    font-family: STARWARS; }
+  .Galaxy_text_aLongTimeAgo {
+    margin-top: 45vh;
+    font-size: 40px;
+    text-align: center;
+    font-family: arial;
+    color: #4BD5EE;
+    opacity: 0;
+    animation-delay: 1s;
+    animation-duration: 7s;
+    animation-name: a-long-time-ago;
+    animation-timing-function: ease-out; }
+@keyframes a-long-time-ago {
+  0% {
+    opacity: 0; }
+  7% {
+    opacity: 0.1; }
+  15% {
+    opacity: 0.2; }
+  30% {
+    opacity: 0.5; }
+  40% {
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  60% {
+    opacity: 1; }
+  70% {
+    opacity: 0.5; }
+  85% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0; } }
+.is-active {
+  display: block; }
+
+.DescriptionContainer {
+  display: none; }
+
+.Description {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  overflow: hidden; }
+  .Description_content {
+    border: 4px solid red;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 99vw;
+    margin: 0 0 0 -685px;
+    top: auto;
+    bottom: 0;
+    height: 30em;
+    /* cosm├®tique */
+    color: #ffff66;
+    text-align: justify;
+    overflow: hidden;
+    font-size: 110px;
+    /* Applique la transformation  */
+    transform-origin: center bottom;
+    transform: perspective(300px) rotateX(25deg); }
+    .Description_content_hide {
+      font-size: 195px;
+      position: absolute;
+      top: 100%;
+      animation-delay: 1s;
+      /* D├®marre l'animation apr├¿s la premi├¿re */
+      animation-duration: 30s;
+      animation-name: text;
+      animation-timing-function: linear;
+      overflow: hidden; }
+@keyframes text {
+  0% {
+    top: 100%;
+    opacity: 1; }
+  80% {
+    opacity: 1;
+    /* disparition progressive ├á la fin */ }
+  100% {
+    top: 0;
+    opacity: 0; } }
+    .Description_content_paragraphe {
+      color: #FFE81F;
+      font-size: 95px;
+      font-family: arial; }
+  .Description_seduction {
+    position: absolute;
+    left: 50%;
+    width: 99vw;
+    margin: 0 0 0 -678px;
+    top: 0;
+    bottom: 0;
+    height: 5.5em;
+    /* cosm├®tique */
+    color: #ffff66;
+    overflow: hidden;
+    font-size: 110px; }
+    .Description_seduction_crawl {
+      font-size: 300px;
+      position: absolute;
+      top: 100%;
+      left: 350;
+      animation-fill-mode: forwards;
+      animation-delay: 25s;
+      /* D├®marre l'animation apr├¿s la premi├¿re */
+      animation-duration: 4s;
+      animation-name: crawl;
+      animation-timing-function: ease-in-out;
+      overflow: hidden; }
+@keyframes crawl {
+  0% {
+    top: 100%;
+    opacity: 1; }
+  80% {
+    opacity: 1;
+    /* disparition progressive ├á la fin */ }
+  100% {
+    top: 100;
+    opacity: 1; } }
+    .Description_seduction_text {
+      color: #FFE81F;
+      font-size: 55px; }
+
+.DescriptionButtons {
+  margin-top: 29%; }
+  .DescriptionButtons_buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 19vw;
+    margin-right: 19vw; }
+    .DescriptionButtons_buttons_notReady {
+      width: 23vw;
+      height: 10vh;
+      background-color: yellow;
+      border: 2px solid white;
+      cursor: pointer;
+      display: none;
+      cursor: pointer; }
+    .DescriptionButtons_buttons_text_dontWant {
+      padding: 1em;
+      text-align: center;
+      font-size: 20px;
+      font-family: STARWARS;
+      color: #000000; }
+    .DescriptionButtons_buttons_ready {
+      width: 23vw;
+      height: 10vh;
+      background-color: yellow;
+      border: 2px solid white;
+      cursor: pointer;
+      display: none;
+      cursor: pointer; }
+    .DescriptionButtons_buttons_text_ready {
+      padding: 1em;
+      text-align: center;
+      font-size: 20px;
+      font-family: STARWARS;
+      color: #000000; }
+
+.is-active {
+  display: block; }
+
+.is-hidden {
+  display: none; }
+
+.ChangeOpenionContainer {
+  display: none; }
+
+.ChangeOpenion {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  overflow: hidden; }
+  .ChangeOpenion_items {
+    display: flex; }
+    .ChangeOpenion_items_yodaImage {
+      width: 35%;
+      height: 80%;
+      margin-top: 5%;
+      margin-left: 5%; }
+    .ChangeOpenion_items_paragraphe {
+      width: 100%;
+      height: 55%;
+      margin-left: 20%; }
+    .ChangeOpenion_items_paragrapheContent {
+      color: white;
+      font-size: 32px;
+      font-family: STARWARS;
+      text-align: center;
+      margin-top: 5%; }
+    .ChangeOpenion_items_buttons {
+      display: flex;
+      margin-top: 10%;
+      margin-left: 25%; }
+      .ChangeOpenion_items_buttons_sure {
+        width: 54%;
+        height: 7%;
+        border: 3px solid #ffe81f;
+        margin-left: 11%;
+        cursor: pointer; }
+        .ChangeOpenion_items_buttons_sure_text {
+          color: white;
+          margin-top: 5%;
+          margin-left: 5%; }
+      .ChangeOpenion_items_buttons_try {
+        width: 54%;
+        height: 7%;
+        border: 3px solid #ffe81f;
+        margin-left: 11%;
+        cursor: pointer; }
+        .ChangeOpenion_items_buttons_try_text {
+          color: white;
+          margin-top: 2%;
+          margin-left: 2%; }
+
+.is-active {
+  display: block; }
+
+.GoodByeContainer {
+  display: none; }
+
+.GoodBye {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  overflow: hidden; }
+  .GoodBye_items_text {
+    color: #FFE81F;
+    font-size: 2em;
+    font-family: STARWARS;
+    text-align: center;
+    margin-top: 13%; }
+  .GoodBye_items_butonReturn {
+    width: 20%;
+    height: 10%;
+    background-color: #FFE81F;
+    cursor: pointer;
+    margin-top: 5%;
+    margin-left: 40%; }
+  .GoodBye_items_textReturn {
+    color: #000000;
+    font-size: 1.2em;
+    font-family: STARWARS;
+    margin-left: 11%;
+    padding: 0.6em; }
+    .GoodBye_items_textReturn_arrow {
+      margin-top: -16%;
+      margin-left: 83%; }
+
+.is-active {
+  display: block; }
+
+.ProfileContainer {
+  display: none; }
+
+.Profile {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  overflow: hidden; }
+  .Profile_items_choosePhoto {
+    width: 100%; }
+    .Profile_items_choosePhoto_text {
+      color: #FFE81F;
+      font-family: STARWARS;
+      font-size: 2em;
+      margin-top: 5%;
+      text-align: center; }
+  .Profile_items_pictures {
+    width: 100%;
+    display: flex;
+    margin: 4em auto; }
+  .Profile_items_pictureOne {
+    width: 30%;
+    height: 40%;
+    background-color: #000000;
+    margin-left: 12%;
+    border: 2px solid #FFFFFF;
+    cursor: pointer; }
+    .Profile_items_pictureOne_image {
+      width: 100%;
+      height: 100%; }
+  .Profile_items_pictureOne:hover {
+    border: 3px solid #FFE81F;
+    box-shadow: inset 0 0 1em gold, 0 0 2em #FFE81F;
+    background-color: rgba(255, 255, 255, 0.7); }
+  .Profile_items_pictureTwo {
+    width: 30%;
+    height: 40%;
+    background-color: #000000;
+    margin-left: 15%;
+    border: 2px solid #FFFFFF;
+    cursor: pointer; }
+    .Profile_items_pictureTwo_image {
+      width: 100%;
+      height: 100%; }
+  .Profile_items_pictureTwo:hover {
+    border: 3px solid #FFE81F;
+    box-shadow: inset 0 0 1em gold, 0 0 2em #FFE81F;
+    background-color: rgba(255, 255, 255, 0.7); }
+  .Profile_items_choosePseudo {
+    width: 100%;
+    margin: 1em auto; }
+    .Profile_items_choosePseudo_text {
+      color: #FFE81F;
+      font-family: STARWARS;
+      font-size: 2em;
+      text-align: center; }
+  .Profile_items_inputsGo {
+    width: 100%;
+    text-align: center; }
+    .Profile_items_inputsGo_choosePseudo {
+      width: 30%;
+      height: 8%;
+      font-family: arial;
+      font-size: 22px;
+      border: 2px solid #FFE81F;
+      background-color: #FFFFFF;
+      outline-style: none; }
+    .Profile_items_inputsGo_submitGo {
+      width: 13%;
+      height: 8%;
+      font-family: arial;
+      font-size: 22px;
+      cursor: pointer;
+      border: 2px solid #FFFFFF;
+      background-color: #FFE81F;
+      outline-style: none; }
+    .Profile_items_inputsGo_submitGo:hover {
+      border: 3px solid #FFE81F;
+      box-shadow: inset 0 0 0.5em #FFE81F, 0 0 1em #FFFFFF; }
+
+.is-active {
+  display: block; }
+
+#parent {
+  padding-top: 30%; }
+
+#div1 {
+  width: 50%;
+  border-radius: 50% 20% / 10% 40%;
+  background-color: #fff;
+  margin-left: 3%;
+  padding: 1em;
+  text-align: center;
+  animation-name: fadeIn;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-fill-mode: both; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+#div2 {
+  width: 50%;
+  border-radius: 50% 20% / 10% 40%;
+  background-color: #fff;
+  margin-left: 3%;
+  padding: 1em;
+  text-align: center;
+  font-size: 16px;
+  animation-name: divFade;
+  animation-delay: 5s;
+  animation-duration: 3s;
+  animation-fill-mode: both; }
+
+@keyframes divFade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+#message {
+  color: #000000;
+  font-size: 0.8em;
+  font-family: montserrat;
+  font-weight: bold; }
+
+.ChatContainer {
+  display: none; }
+
+.Chat {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  overflow: hidden; }
+  .Chat_items {
+    display: flex; }
+    .Chat_items_picture {
+      width: 45%;
+      height: 70vh;
+      margin-top: 6%;
+      margin-left: 3%; }
+      .Chat_items_picture_nathalie {
+        width: 100%;
+        height: 100%; }
+    .Chat_items_chatField {
+      width: 50%;
+      height: 70vh;
+      border: 2px solid #FFE81F;
+      margin-left: 1%;
+      margin-top: 3%;
+      border-spacing: 0; }
+  .Chat_messages {
+    display: flex;
+    margin-left: 40%; }
+    .Chat_messages_one {
+      width: 33%;
+      height: 10%;
+      border: 1px solid #FFE81F;
+      cursor: pointer;
+      background-color: #FFFFFF;
+      opacity: 0.8;
+      margin-left: 19%; }
+      .Chat_messages_one_text {
+        color: #FFE81F;
+        font-size: 0.8em;
+        margin-top: 2%;
+        text-align: center;
+        animation-name: textOui;
+        animation-delay: 10s;
+        animation-duration: 3s;
+        animation-fill-mode: both; }
+@keyframes textOui {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+    .Chat_messages_two {
+      width: 30%;
+      height: 10%;
+      border: 1px solid #FFE81F;
+      margin-left: 10%;
+      cursor: pointer;
+      background-color: #FFFFFF;
+      opacity: 0.8; }
+      .Chat_messages_two_text {
+        color: #FFE81F;
+        font-size: 0.8em;
+        margin-top: 2%;
+        text-align: center;
+        animation-name: textNon;
+        animation-delay: 10s;
+        animation-duration: 3s;
+        animation-fill-mode: both; }
+@keyframes textNon {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.is-active {
+  display: block; }
+
+.mainContainer {
+  max-width: 1300px;
+  padding: 0 3em;
+  margin: 0 auto; }
+  @media (max-width: 1024px) {
+    .mainContainer {
+      padding: 0 2em;
+      margin: 0 auto; } }
+  @media (max-width: 960px) {
+    .mainContainer {
+      padding: 0 1em; } }
+  @media (max-width: 600px) {
+    .mainContainer {
+      padding: 0 1em; } }
+
+/*# sourceMappingURL=style.css.map */

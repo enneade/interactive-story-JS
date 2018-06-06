@@ -1,0 +1,100 @@
+.ProfileContainer  {
+  display: none;
+}
+.Profile{
+  width: 100vw;
+  height: 100vh;
+  background-color: $black;
+  overflow: hidden;
+  &_items{
+    &_choosePhoto{
+      width: 100%;
+      &_text{
+        color: $yellow;
+        font-family: $mainFont;
+        font-size: 2em;
+        margin-top: 5%;
+        text-align: center;
+      }
+    }
+    &_pictures{
+      width: 100%;
+      display: flex;
+      margin: 4em auto;
+    }
+    &_pictureOne{
+      width: 30%;
+      height: 40%;
+      background-color: $black;
+      margin-left: 12%;
+      border: 2px solid $white;
+      cursor: pointer;
+      &_image{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &_pictureOne:hover{
+      border: 3px solid $yellow;
+      box-shadow: inset 0 0 1em gold, 0 0 2em $yellow;
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+    &_pictureTwo{
+      width: 30%;
+      height: 40%;
+      background-color: $black;
+      margin-left: 15%;
+      border: 2px solid $white;
+      cursor: pointer;
+      &_image{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &_pictureTwo:hover{
+      border: 3px solid $yellow;
+      box-shadow: inset 0 0 1em gold, 0 0 2em $yellow;
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+    &_choosePseudo{
+      width: 100%;
+      margin: 1em auto;
+      &_text{
+        color: $yellow;
+        font-family: $mainFont;
+        font-size: 2em;
+        text-align: center;
+      }
+    }
+    &_inputsGo{
+      width: 100%;
+      text-align: center;
+      &_choosePseudo{
+        width: 30%;
+        height: 8%;
+        font-family: arial;
+        font-size: 22px;
+        border: 2px solid $yellow;
+        background-color: $white;
+        outline-style: none;
+      }
+      &_submitGo{
+        width: 13%;
+        height: 8%;
+        font-family: arial;
+        font-size: 22px;
+        cursor: pointer;
+        border: 2px solid $white;
+        background-color: $yellow;
+        outline-style: none;
+      }
+      &_submitGo:hover{
+        border: 3px solid $yellow;
+        box-shadow: inset 0 0 0.5em $yellow, 0 0 1em $white;
+      }
+    }
+  }
+}
+.is-active{
+  display: block;
+}

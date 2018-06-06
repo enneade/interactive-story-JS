@@ -1,0 +1,40 @@
+.GoodByeContainer{
+  display: none;
+}
+.GoodBye{
+   width: 100vw;
+   height: 100vh;
+   background-color: $black;
+   overflow: hidden;
+   &_items{
+     &_text{
+       color: $yellow;
+      font-size: 2em;
+      font-family: $mainFont;
+      text-align: center;
+      margin-top: 13%;
+     }
+     &_butonReturn{
+       width: 20%;
+       height: 10%;
+       background-color: $yellow;
+       cursor: pointer;
+       margin-top: 5%;
+       margin-left: 40%;
+     }
+     &_textReturn{
+       color: $black;
+       font-size: 1.2em;
+       font-family: $mainFont;
+       margin-left: 11%;
+       padding: 0.6em;
+      &_arrow{
+        margin-top: -16%;
+        margin-left: 83%;
+      }
+     }
+   }
+}
+.is-active{
+  display: block;
+}

@@ -1,0 +1,63 @@
+.ChangeOpenionContainer{
+  display: none;
+}
+.ChangeOpenion{
+  width: 100vw;
+  height: 100vh;
+  background-color: $black;
+  overflow: hidden;
+  &_items{
+    display: flex;
+    &_yodaImage{
+      width: 35%;
+      height: 80%;
+      margin-top: 5%;
+      margin-left: 5%;
+    }
+    &_content{}
+    &_paragraphe{
+      width: 100%;
+      height: 55%;
+      margin-left: 20%;
+    }
+    &_paragrapheContent{
+      color: white;
+      font-size: 32px;
+      font-family: STARWARS;
+      text-align: center;
+      margin-top: 5%;
+    }
+    &_buttons{
+      display: flex;
+      margin-top: 10%;
+      margin-left: 25%;
+      &_sure{
+        width: 54%;
+        height: 7%;
+        border: 3px solid #ffe81f;
+        margin-left: 11%;
+        cursor: pointer;
+        &_text{
+          color: white;
+          margin-top: 5%;
+          margin-left: 5%;
+        }
+      }
+      &_try{
+        width: 54%;
+        height: 7%;
+        border: 3px solid #ffe81f;
+        margin-left: 11%;
+        cursor: pointer;
+        &_text{
+          color: white;
+          margin-top: 2%;
+          margin-left:2%;
+        }
+      }
+    }
+  }
+}
+.is-active{
+  display: block;
+}
